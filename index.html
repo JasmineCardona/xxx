@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>xxx</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="gift-container">
+    <div id="gift-box">
+      <p>🎁</p>
+    </div>
+  </div>
+  <div id="greeting" class="hidden">
+    <div id="top-text">Ang gusto kong bahagi sa museo ay makita ang paborito kong sining.</div>
+    <div id="bottom-text">Maligayang Kaarawan, sa paborito kong sining!</div>
+  </div>
+
+  <script>
+    const giftBox = document.getElementById('gift-box');
+    const greeting = document.getElementById('greeting');
+    const giftContainer = document.getElementById('gift-container');
+    const body = document.body;
+
+    giftBox.addEventListener('click', () => {
+      giftContainer.style.display = 'none'; // Hide the gift container
+      greeting.style.display = 'block'; // Show the greeting
+      body.classList.add('birthday-background'); // Add class for background image
+    });
+  </script>
+</body>
+</html>

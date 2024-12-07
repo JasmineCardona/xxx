@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c); /* Initial background */
+    color: #fff;
+    overflow: hidden;
+    transition: background 0.5s ease-in-out; /* Smooth transition */
+}
+
+/* Background Image (activated via class) */
+body.birthday-background {
+    background: url(Image\ \(11\).jpg) no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Ensure the image covers the entire screen */
+}
+
+/* Gift Box Container */
+#gift-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Gift Box */
+#gift-box {
+    width: 150px;
+    height: 150px;
+    background-color: #ffcc00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.6s ease;
+}
+
+#gift-box:hover {
+    transform: scale(1.1);
+}
+
+/* Greeting Styles */
+#greeting {
+    display: none; /* Initially hidden */
+    position: relative; /* Allows positioning of children */
+    height: 100vh; /* Full height for the screen */
+    width: 100%;
+    color: #fff; /* Ensure text is visible on the image */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add some shadow for better visibility */
+}
+
+/* Top Text */
+#top-text {
+    position: absolute;
+    top: 20px; /* Adjust distance from the top */
+    width: 100%;
+    text-align: center;
+    font-family: "Arial", sans-serif; /* Ensure same font */
+    font-size: 18px; /* Match font size */
+    font-weight: normal; /* Match font weight */
+    color: #fff; /* White text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add text shadow for visibility */
+}
+
+/* Bottom Text */
+#bottom-text {
+    position: absolute;
+    bottom: 20px; /* Adjust distance from the bottom */
+    width: 100%;
+    text-align: center;
+    font-family: "Arial", sans-serif; /* Same font */
+    font-size: 18px; /* Same size */
+    font-weight: normal; /* Same weight */
+    color: #fff; /* White text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Add shadow */
+}
